@@ -7,7 +7,7 @@ describe('The countRegNumber function', function(){
         var regCount = countRegNumber('CA 182736,CY 523519,CJ 812328')
         assert.equal(regCount, 3);
     });
-    it('It should take this kind of a string  "CA 42665, AA 12 RT GP"', function(){
+    it('It should take this kind of a string  "CA 42665, AA 12 RT GP" and return count', function(){
         var regCount = countRegNumber('CA 42665, AA 12 RT GP')
         assert.equal(regCount, 2);
     });
